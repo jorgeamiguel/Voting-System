@@ -18,10 +18,10 @@
                 if(isset($_GET["page"])){
                     $html = $_GET["page"].".html";
                     $php = $_GET["page"].".php";
-                    if (file_exists($html)){
-                        $page = $html;
-                    }elseif (file_exists($php)){
+                    if (file_exists($php)){
                         $page = $php;
+                    }elseif (file_exists($html)){
+                        $page = $html;
                     }
                 }
                 require $page;
