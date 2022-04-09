@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+
+body {
+    background: #5b3286;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    font-size: 21px;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 3px solid black;
+    padding-bottom: 15px;
+}
+/*ARRUMAR BORDA */
+.header-logo {
+    padding-top: 10px;
+    height: 50px;
+}
+
+.header-link, .contact-link {
+    padding: 25px;
+    text-decoration: none;
+    font-size: 17px;
+    color: white;
+}
+
+.main {
+    display: flex;
+    flex-flow: column wrap;
+    text-align: center;
+    padding-bottom: 15px;
+}
+
+.main-h1 {
+    font-size: 50px;
+}
+
+.main-div-why {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-between;
+    width: 60%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.main-img {
+    height: 300px;
+}
+
+.main-h3 {
+    font-size: 24px;
+}
+
+.main-button {
+	box-shadow: inset 0px 1px 0px 0px #efdcfb;
+	background: linear-gradient(to bottom, #c78cf7 5%, #9f4edd 100%);
+	background-color: #dfbdfa;
+	border-radius: 6px;
+	border: 1px solid #c584f3;
+	display: inline-block;
+	cursor: pointer;
+	color: #ffffff;
+	font-family: Arial;
+	font-size: 18px;
+	font-weight: bold;
+	padding: 16px 30px;
+	text-decoration: none;
+	text-shadow: 2px 2px 1px #9752cc;
+}
+
+.main-button:hover {
+	background: linear-gradient(to bottom, #9f4edd 5%, #c78cf7 100%);
+	background-color: #a857e6;
+}
+
+.main-button:active {
+	position: relative;
+	top: 1px;
+}
+
+.footer {
+    border-top: 3px solid black;
+}
+
+.footer-img {
+    display: block;
+    margin: 0 auto;
+    padding-top: 15px;
+}
+
+.contact-div {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    margin: 15px auto;
+}
+
+.contact-link-div{
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.contact-img {
+    height: 30px;
+}
+
+.about-h2 {
+    font-size: 25px;
+    border-bottom: solid white 1px;
+}
+
+.vote-paragraph {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.vote-div {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-around;
+    width: 600px;
+    margin: 0 auto;
+}
