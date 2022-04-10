@@ -12,13 +12,9 @@
             -->
 <?php
     require 'db.php';
-    if (!empty($_POST)) {
-        if (empty($_POST['option'][0]) || empty($_POST['option'][1]) || empty($_POST['option'][2])) {
-            require('open_pool.html');
-        } else {
+    if (!empty($_POST) && !empty($_POST['option'][0]) && !empty($_POST['option'][1]) && !empty($_POST['option'][2])) {
             $options = $_POST['option'];
             require('pool_created.php');
-        }
     } else {
         require('open_pool.html');
     }
