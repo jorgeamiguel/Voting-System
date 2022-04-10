@@ -45,8 +45,9 @@
 
     function insertVote($vote_id){
         $connection = dbConnect();
-        $query = "UPDATE options SET votes = votes + 1 WHERE id = $vote_id";
+        $query = "UPDATE options SET votes = votes + 1 WHERE id = :vote_id";
         $query = $connection->prepare($query);
+        $query->bindParam(':vote_id', $vote_id);
         if (!$query->execute()) {
             echo "Unable to register pool title.";
         }
@@ -81,7 +82,6 @@
                 }
             }
         }
-        //dbDisconnect($connection);
     }
 
 

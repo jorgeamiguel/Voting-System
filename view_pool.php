@@ -31,10 +31,8 @@
             echo "<h1 class='main-h1'>Doesn't exist any vote with this id.</h1>";
 
     } else if (isset($_POST["vote_id"])) {
-        $vote_id = $_POST["vote_id"];
+        $vote_id = $_POST["vote_id"]; 
         require 'vote_processed.php';
-
-
 
     } else {
         echo "<h1 class='main-h1'>Doesn't exist any vote with this id.</h1>";
