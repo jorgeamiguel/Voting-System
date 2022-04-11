@@ -16,11 +16,10 @@
 
                 echo 
                     '<section id="'.$option["option"].'" class="pool-section">',
-                        '<input type="radio" value="'.$option["id"].'" name="vote_id">',
-                        '<label for="'.$option["option"].'" id="label_'.$option["option"].'">'.$option["option"].'     ('.$option["votes"].' votes)</label><br><br>',
+                        '<input type="radio" name="vote_id" value="'.$option["id"].'">',
+                        '<label for="'.$option["option"].'">'.$option["option"].'     ('.$option["votes"].' votes)</label><br><br>',
                     '</section>';
             }
-            
 
             echo
                 '</div>',
@@ -29,14 +28,11 @@
 
         } else
             echo "<h1 class='main-h1'>Doesn't exist any vote with this id.</h1>";
-
     } else if (isset($_POST["vote_id"])) {
         $vote_id = $_POST["vote_id"]; 
         require 'vote_processed.php';
-
     } else {
         echo "<h1 class='main-h1'>Doesn't exist any vote with this id.</h1>";
     }
-
 
 ?>
